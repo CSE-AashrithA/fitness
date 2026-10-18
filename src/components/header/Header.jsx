@@ -5,9 +5,18 @@ import Navigation from "../navigation/Navigation";
 const Header = () => {
     return (
         <header className="main-header">
-            <img id="logo" src={logo} alt="fitguide" />
-            <h1>HI</h1>
-            <Navigation />
+            <div className="header-content">
+                <a className="logo" href="#">
+                    <img src={logo} alt="FitGuide logo" />
+                    <span>FitGuide</span>
+                </a>
+
+                <Navigation />
+
+                <a className="contact-button" href="#">
+                    Contact us
+                </a>
+            </div>
         </header>
     );
 };

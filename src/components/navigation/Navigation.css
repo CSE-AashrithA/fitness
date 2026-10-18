@@ -1,0 +1,26 @@
+.main-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: var(--dark-text);
+}
+
+.main-nav a:hover {
+    color: var(--navy);
+}
+
+@media (max-width: 700px) {
+    .main-nav {
+        width: 100%;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
