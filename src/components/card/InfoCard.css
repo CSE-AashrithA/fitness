@@ -1,0 +1,32 @@
+.info-card {
+    background-color: var(--white);
+    border: 1px solid #e2e5e8;
+    border-radius: 7px;
+    flex: 1;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.info-card img {
+    height: 230px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.info-card h3 {
+    color: var(--navy);
+    font-size: 1.15em;
+    margin: 18px 0 10px;
+}
+
+.info-card p {
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .info-card img {
+        height: 250px;
+    }
+}
