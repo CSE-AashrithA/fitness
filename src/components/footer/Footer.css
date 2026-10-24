@@ -1,0 +1,10 @@
+.main-footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.main-footer p {
+    margin: 6px 0;
+}

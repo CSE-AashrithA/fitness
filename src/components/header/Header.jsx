@@ -1,21 +1,22 @@
 import "./Header.css";
 import logo from "./images/logo.jpg";
 import Navigation from "../navigation/Navigation";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
         <header className="main-header">
             <div className="header-content">
-                <a className="logo" href="#">
+                <NavLink className="logo" to="/">
                     <img src={logo} alt="FitGuide logo" />
                     <span>FitGuide</span>
-                </a>
+                </NavLink>
 
                 <Navigation />
 
-                <a className="contact-button" href="#">
+                <NavLink className="contact-button" to="/contact">
                     Contact us
-                </a>
+                </NavLink>
             </div>
         </header>
     );
