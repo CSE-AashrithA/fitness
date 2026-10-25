@@ -1,14 +1,40 @@
 {
   "files": {
-    "main.css": "/fitness/static/css/main.a06e39b8.css",
-    "main.js": "/fitness/static/js/main.d0bafd7c.js",
+    "main.css": "/fitness/static/css/main.0c047cb6.css",
+    "main.js": "/fitness/static/js/main.9eac22af.js",
+    "static/media/eat-energy.png": "/fitness/static/media/eat-energy.5daa5c7adc3b6a8b6b7f.png",
+    "static/media/pre-game.png": "/fitness/static/media/pre-game.6390f4e5f273c1bcbaa1.png",
+    "static/media/recovery-nutrition.png": "/fitness/static/media/recovery-nutrition.e15d51781d76a6ca7e6a.png",
+    "static/media/pre-game-meal.jpg": "/fitness/static/media/pre-game-meal.d64c4f1ef1b2b606745e.jpg",
+    "static/media/breakfast.jpg": "/fitness/static/media/breakfast.d0f47f476750770cbe4f.jpg",
+    "static/media/recovery-meal.jpg": "/fitness/static/media/recovery-meal.b80810fbd8590fab517e.jpg",
+    "static/media/gym-bag-snack.jpg": "/fitness/static/media/gym-bag-snack.f8211419495394c32bcd.jpg",
+    "static/media/snacks.jpg": "/fitness/static/media/snacks.c7e56853cc572eda0b78.jpg",
+    "static/media/recover.png": "/fitness/static/media/recover.a4b2d44140d40d7133e4.png",
+    "static/media/fruit-snack.jpg": "/fitness/static/media/fruit-snack.8b0eeb28e3d99e601095.jpg",
+    "static/media/hydrate.png": "/fitness/static/media/hydrate.a30e759908c3a74379bf.png",
+    "static/media/jordan.png": "/fitness/static/media/jordan.c2d858c389d276c2e715.png",
+    "static/media/pre-game-fuel.jpg": "/fitness/static/media/pre-game-fuel.b0ec46481c68ec3adf01.jpg",
+    "static/media/maya.png": "/fitness/static/media/maya.ab0c753ca62ea35dc923.png",
+    "static/media/alex.png": "/fitness/static/media/alex.80df7a98b21e04334d2f.png",
+    "static/media/contact-support.jpg": "/fitness/static/media/contact-support.269b70135acdd6642e91.jpg",
+    "static/media/hero.jpg": "/fitness/static/media/hero.3d9ab7721f52ddf560f7.jpg",
+    "static/media/plan.png": "/fitness/static/media/plan.e8ffd0936f694b6d84f2.png",
+    "static/media/workouts-hero.jpg": "/fitness/static/media/workouts-hero.0278a7a1eef31674e9d1.jpg",
+    "static/media/nutrition-hero.jpg": "/fitness/static/media/nutrition-hero.40b4fecbbb21fe2971af.jpg",
+    "static/media/contact-hero.jpg": "/fitness/static/media/contact-hero.5fcabde788740a5c280a.jpg",
+    "static/media/pre-game-hero.jpg": "/fitness/static/media/pre-game-hero.41c62b9336bcf762db1e.jpg",
     "static/media/logo.jpg": "/fitness/static/media/logo.79488573352c9077e257.jpg",
+    "static/media/strength.jpg": "/fitness/static/media/strength.fecb17e391a3bb2a6aaf.jpg",
+    "static/media/conditioning.jpg": "/fitness/static/media/conditioning.b90b3b5561a7a867d639.jpg",
+    "static/media/mobility.jpg": "/fitness/static/media/mobility.58a31a3d7ff6fd940479.jpg",
+    "static/media/training-plan.jpg": "/fitness/static/media/training-plan.e6a73be0a31584685a9e.jpg",
     "index.html": "/fitness/index.html",
-    "main.a06e39b8.css.map": "/fitness/static/css/main.a06e39b8.css.map",
-    "main.d0bafd7c.js.map": "/fitness/static/js/main.d0bafd7c.js.map"
+    "main.0c047cb6.css.map": "/fitness/static/css/main.0c047cb6.css.map",
+    "main.9eac22af.js.map": "/fitness/static/js/main.9eac22af.js.map"
   },
   "entrypoints": [
-    "static/css/main.a06e39b8.css",
-    "static/js/main.d0bafd7c.js"
+    "static/css/main.0c047cb6.css",
+    "static/js/main.9eac22af.js"
   ]
 }
