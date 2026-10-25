@@ -1,0 +1,116 @@
+.hero-label {
+    color: var(--gold);
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.intro-section {
+    margin: auto;
+    max-width: 1200px;
+    padding: 75px 55px;
+}
+
+.section-title span {
+    background-color: var(--gold);
+    display: block;
+    height: 2px;
+    margin-bottom: 14px;
+    width: 48px;
+}
+
+.section-title h2 {
+    color: var(--navy);
+    font-size: 2.1em;
+    margin: 0;
+}
+
+.section-intro {
+    color: #666666;
+    line-height: 1.5;
+    margin: 20px 0 38px;
+    max-width: 700px;
+}
+
+.pre-game-card-columns {
+    display: flex;
+    gap: 28px;
+}
+.meal-section {
+    align-items: center;
+    background-color: #f7f5f1;
+    display: flex;
+    gap: 70px;
+    padding: 75px 10%;
+}
+
+.meal-content,
+.meal-section img {
+    flex: 1;
+}
+
+.meal-content h3 {
+    color: var(--navy);
+    font-size: 1.05em;
+    margin: 25px 0 7px;
+}
+
+.meal-content p {
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.meal-section img {
+    height: 460px;
+    object-fit: cover;
+}
+.snack-section {
+    padding: 75px 55px;
+}
+
+.snack-content {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.snack-card-columns {
+    display: flex;
+    gap: 28px;
+    margin-top: 42px;
+}
+
+@media (max-width: 700px) {
+    .intro-section {
+        padding: 58px 25px;
+    }
+
+    .section-title h2 {
+        font-size: 1.9em;
+    }
+
+    .pre-game-card-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .meal-section {
+        flex-direction: column;
+        gap: 35px;
+        padding: 58px 25px;
+    }
+    
+    .meal-section img {
+        height: auto;
+        width: 100%;
+    }
+    .snack-section {
+        padding: 58px 25px;
+    }
+    
+    .snack-card-columns {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+}

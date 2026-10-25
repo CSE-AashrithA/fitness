@@ -1,0 +1,130 @@
+.workouts-button {
+    background-color: var(--gold);
+    border-radius: 5px;
+    color: var(--navy);
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 28px;
+    padding: 14px 20px;
+}
+
+.workout-section {
+    margin: auto;
+    max-width: 1200px;
+    padding: 75px 55px;
+}
+
+.section-title span {
+    background-color: var(--gold);
+    display: block;
+    height: 2px;
+    margin-bottom: 14px;
+    width: 48px;
+}
+
+.section-title h2 {
+    color: var(--navy);
+    font-size: 2.1em;
+    margin: 0;
+}
+
+.section-intro {
+    color: #666666;
+    line-height: 1.5;
+    margin: 20px 0 38px;
+    max-width: 700px;
+}
+
+.workout-card-columns {
+    display: flex;
+    gap: 28px;
+}
+.routine-section {
+    align-items: center;
+    background-color: #f7f5f1;
+    display: flex;
+    gap: 70px;
+    padding: 75px 10%;
+}
+
+.routine-content,
+.routine-section img {
+    flex: 1;
+}
+
+.routine-content h3 {
+    color: var(--navy);
+    font-size: 1.05em;
+    margin: 25px 0 7px;
+}
+
+.routine-content p {
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 420px;
+}
+
+.routine-section img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.routine-button {
+    background-color: var(--navy);
+    border-radius: 5px;
+    color: var(--white);
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 28px;
+    padding: 14px 20px;
+}
+.tips-section {
+    background-color: var(--white);
+    padding: 75px 55px;
+}
+
+.tips-content {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.tips-card-columns {
+    display: flex;
+    gap: 28px;
+    margin-top: 42px;
+}
+
+@media (max-width: 700px) {
+    .workout-section {
+        padding: 58px 25px;
+    }
+
+    .section-title h2 {
+        font-size: 1.9em;
+    }
+
+    .workout-card-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .routine-section {
+        flex-direction: column;
+        gap: 35px;
+        padding: 58px 25px;
+    }
+    
+    .routine-section img {
+        height: 300px;
+        width: 100%;
+    }
+    .tips-section {
+        padding: 58px 25px;
+    }
+    
+    .tips-card-columns {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+}

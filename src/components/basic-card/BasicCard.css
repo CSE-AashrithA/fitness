@@ -1,0 +1,19 @@
+.basic-card {
+    background-color: var(--white);
+    border: 1px solid #e2e5e8;
+    border-radius: 7px;
+    flex: 1;
+    padding: 23px 20px;
+}
+
+.basic-card h3 {
+    color: var(--navy);
+    font-size: 1.15em;
+    margin: 0 0 10px;
+}
+
+.basic-card p {
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}

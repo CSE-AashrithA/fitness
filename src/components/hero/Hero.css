@@ -37,6 +37,10 @@
     margin: 0;
     max-width: 500px;
 }
+.light-text h1,
+.light-text p {
+    color: var(--white);
+}
 
 @media (max-width: 700px) {
     .hero img {

@@ -8,6 +8,7 @@
     padding: 14px 20px;
 }
 
+
 .performance-section {
     margin: auto;
     max-width: 1200px;
@@ -33,6 +34,8 @@
     gap: 28px;
     margin-top: 42px;
 }
+
+
 .plan-section {
     align-items: center;
     background-color: #f7f5f1;
@@ -73,6 +76,7 @@
     padding: 14px 20px;
 }
 
+
 .home-nutrition-section {
     margin: auto;
     max-width: 1200px;
@@ -85,8 +89,25 @@
     margin-top: 42px;
 }
 
+
+.testimonial-section {
+    background-color: #f7f5f1;
+    padding: 75px 10%;
+}
+
+.testimonial-content {
+    margin: auto;
+    max-width: 1090px;
+}
+
+.testimonial-section .card-columns {
+    margin-top: 42px;
+}
+
+
 @media (max-width: 700px) {
-    .performance-section {
+    .performance-section,
+    .home-nutrition-section {
         padding: 58px 25px;
     }
 
@@ -94,38 +115,24 @@
         font-size: 1.9em;
     }
 
-    .card-columns {
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 30px;
-    }
-    .plan-section {
-        flex-direction: column;
-        gap: 35px;
-        padding: 58px 25px;
-    }
-    .plan-section img {
-        height: auto;
-        width: 100%;
-    }
-    .home-nutrition-section {
-        padding: 58px 25px;
-    }
-    
+    .card-columns,
     .two-card-columns {
         flex-direction: column;
         gap: 20px;
         margin-top: 30px;
     }
-    .testimonial-section {
-        background-color: #f7f5f1;
-        padding: 75px 55px;
+
+    .plan-section {
+        flex-direction: column;
+        gap: 35px;
+        padding: 58px 25px;
     }
-    
-    .testimonial-content {
-        margin: auto;
-        max-width: 1090px;
+
+    .plan-section img {
+        height: auto;
+        width: 100%;
     }
+
     .testimonial-section {
         padding: 58px 25px;
     }

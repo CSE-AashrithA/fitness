@@ -1,0 +1,137 @@
+.nutrition-button {
+    background-color: var(--gold);
+    border-radius: 5px;
+    color: var(--navy);
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 28px;
+    padding: 14px 20px;
+}
+
+.basics-section,
+.guide-section {
+    margin: auto;
+    max-width: 1200px;
+    padding: 75px 55px;
+}
+
+.section-title span {
+    background-color: var(--gold);
+    display: block;
+    height: 2px;
+    margin-bottom: 14px;
+    width: 48px;
+}
+
+.section-title h2 {
+    color: var(--navy);
+    font-size: 2.1em;
+    margin: 0;
+}
+
+.section-intro {
+    color: #666666;
+    line-height: 1.5;
+    margin: 20px 0 38px;
+    max-width: 700px;
+}
+
+.basic-card-columns,
+.guide-card-columns {
+    display: flex;
+    gap: 25px;
+}
+
+.guide-card-columns {
+    margin-top: 42px;
+}
+
+.featured-section {
+    background-color: #f7f5f1;
+    padding: 75px 0;
+}
+
+.featured-layout {
+    align-items: center;
+    display: flex;
+    gap: 65px;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 55px;
+}
+
+.featured-content,
+.featured-image {
+    flex: 1;
+}
+
+.featured-content h3 {
+    color: var(--navy);
+    font-size: 1.4em;
+    margin: 30px 0 10px;
+}
+
+.featured-content p {
+    color: #666666;
+    line-height: 1.5;
+    margin: 0 0 28px;
+    max-width: 450px;
+}
+
+.featured-image img {
+    height: 390px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.featured-button {
+    background-color: var(--navy);
+    border-radius: 5px;
+    color: var(--white);
+    display: inline-block;
+    font-weight: bold;
+    padding: 14px 20px;
+}
+
+@media (max-width: 700px) {
+    .basics-section,
+    .guide-section {
+        padding: 58px 25px;
+    }
+
+    .section-title h2 {
+        font-size: 1.9em;
+    }
+
+    .basic-card-columns,
+    .guide-card-columns,
+    .featured-layout {
+        flex-direction: column;
+    }
+
+    .basic-card-columns,
+    .guide-card-columns {
+        gap: 20px;
+    }
+
+    .guide-card-columns {
+        margin-top: 30px;
+    }
+
+    .featured-section {
+        padding: 58px 0;
+    }
+
+    .featured-layout {
+        gap: 35px;
+        padding: 0 25px;
+    }
+
+    .featured-image {
+        width: 100%;
+    }
+
+    .featured-image img {
+        height: 280px;
+    }
+}

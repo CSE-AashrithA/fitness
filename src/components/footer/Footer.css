@@ -1,10 +1,107 @@
 .main-footer {
     background-color: var(--navy);
     color: var(--white);
-    padding: 30px 25px;
-    text-align: center;
+    padding: 68px 10% 50px;
 }
 
-.main-footer p {
-    margin: 6px 0;
+.footer-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1090px;
+}
+
+.footer-title {
+    max-width: 500px;
+}
+
+.footer-title span {
+    background-color: var(--gold);
+    display: block;
+    height: 2px;
+    margin-bottom: 14px;
+    width: 48px;
+}
+
+.footer-title h2 {
+    font-size: 2.4em;
+    margin: 0;
+}
+
+.footer-buttons {
+    align-items: center;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-buttons a {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.footer-workouts-button {
+    background-color: var(--gold);
+    border-radius: 5px;
+    color: var(--navy) !important;
+    padding: 14px 20px;
+}
+
+.footer-line {
+    background-color: var(--gold);
+    height: 1px;
+    margin: 38px auto;
+    max-width: 1090px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1090px;
+}
+
+.footer-links > div:first-child {
+    max-width: 300px;
+}
+
+.footer-links h3 {
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.footer-links h4 {
+    font-size: 0.85em;
+    margin-top: 0;
+}
+
+.footer-links p,
+.footer-links a {
+    color: var(--white);
+    display: block;
+    font-size: 0.85em;
+    line-height: 1.7;
+    margin: 0 0 9px;
+}
+
+@media (max-width: 700px) {
+    .main-footer {
+        padding: 55px 25px 35px;
+    }
+
+    .footer-top,
+    .footer-links {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-buttons {
+        gap: 18px;
+    }
+
+    .footer-title h2 {
+        font-size: 1.9em;
+    }
 }
