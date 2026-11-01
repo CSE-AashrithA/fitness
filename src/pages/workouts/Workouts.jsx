@@ -8,8 +8,33 @@ import conditioningImage from "../../images/workouts/conditioning.jpg";
 import mobilityImage from "../../images/workouts/mobility.jpg";
 import trainingPlanImage from "../../images/workouts/training-plan.jpg";
 import BasicCard from "../../components/basic-card/BasicCard";
+import Slideshow from "../../components/slideshow/Slideshow";
+
 
 const Workouts = () => {
+    const slides = [
+        {
+            image: strengthImage,
+            alt: "College athlete strength training in a gym",
+            title: "Upper-Body Strength",
+            text: "A focused workout can help build upper-body strength.",
+            example: "3 sets of push-ups, dumbbell rows, and a 30-second plank."
+        },
+        {
+            image: conditioningImage,
+            alt: "College athlete doing conditioning exercises",
+            title: "Conditioning Circuit",
+            text: "Short intervals can help improve endurance and game-day stamina.",
+            example: "30 seconds of high knees, squats, and mountain climbers. Rest, then repeat."
+        },
+        {
+            image: mobilityImage,
+            alt: "College athlete stretching after a workout",
+            title: "Mobility Reset",
+            text: "Mobility work can help you feel less stiff after training.",
+            example: "Try arm circles, hip stretches, and a slow hamstring stretch."
+        }
+    ];
     return (
         <main className="workouts-page">
             <Hero
@@ -115,7 +140,28 @@ const Workouts = () => {
         </div>
     </div>
 </section>
+<section className="training-location-section">
+                <div className="training-location-content">
+                    <div className="section-title">
+                        <span></span>
+                        <h2>Find a place to train.</h2>
+                    </div>
+
+                    <p>
+                        The Strom Thurmond Wellness and Fitness Center has
+                        space and equipment for students between classes.
+                    </p>
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps?q=Strom+Thurmond+Wellness+and+Fitness+Center+Columbia+SC&output=embed"
+                    title="Map of Strom Thurmond Wellness and Fitness Center"
+                    loading="lazy"
+                ></iframe>
+            </section>
+<Slideshow slides={slides} />
         </main>
+        
     );
 };
 
