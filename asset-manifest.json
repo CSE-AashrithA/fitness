@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fitness/static/css/main.0c047cb6.css",
-    "main.js": "/fitness/static/js/main.9eac22af.js",
+    "main.css": "/fitness/static/css/main.98d43653.css",
+    "main.js": "/fitness/static/js/main.18e3fac9.js",
     "static/media/eat-energy.png": "/fitness/static/media/eat-energy.5daa5c7adc3b6a8b6b7f.png",
     "static/media/pre-game.png": "/fitness/static/media/pre-game.6390f4e5f273c1bcbaa1.png",
     "static/media/recovery-nutrition.png": "/fitness/static/media/recovery-nutrition.e15d51781d76a6ca7e6a.png",
@@ -30,11 +30,11 @@
     "static/media/mobility.jpg": "/fitness/static/media/mobility.58a31a3d7ff6fd940479.jpg",
     "static/media/training-plan.jpg": "/fitness/static/media/training-plan.e6a73be0a31584685a9e.jpg",
     "index.html": "/fitness/index.html",
-    "main.0c047cb6.css.map": "/fitness/static/css/main.0c047cb6.css.map",
-    "main.9eac22af.js.map": "/fitness/static/js/main.9eac22af.js.map"
+    "main.98d43653.css.map": "/fitness/static/css/main.98d43653.css.map",
+    "main.18e3fac9.js.map": "/fitness/static/js/main.18e3fac9.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c047cb6.css",
-    "static/js/main.9eac22af.js"
+    "static/css/main.98d43653.css",
+    "static/js/main.18e3fac9.js"
   ]
 }
