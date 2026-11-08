@@ -1,15 +1,12 @@
 {
   "files": {
-    "main.css": "/fitness/static/css/main.98d43653.css",
-    "main.js": "/fitness/static/js/main.18e3fac9.js",
+    "main.css": "/fitness/static/css/main.a98f70d9.css",
+    "main.js": "/fitness/static/js/main.8b49d46e.js",
     "static/media/eat-energy.png": "/fitness/static/media/eat-energy.5daa5c7adc3b6a8b6b7f.png",
     "static/media/pre-game.png": "/fitness/static/media/pre-game.6390f4e5f273c1bcbaa1.png",
     "static/media/recovery-nutrition.png": "/fitness/static/media/recovery-nutrition.e15d51781d76a6ca7e6a.png",
     "static/media/pre-game-meal.jpg": "/fitness/static/media/pre-game-meal.d64c4f1ef1b2b606745e.jpg",
-    "static/media/breakfast.jpg": "/fitness/static/media/breakfast.d0f47f476750770cbe4f.jpg",
-    "static/media/recovery-meal.jpg": "/fitness/static/media/recovery-meal.b80810fbd8590fab517e.jpg",
     "static/media/gym-bag-snack.jpg": "/fitness/static/media/gym-bag-snack.f8211419495394c32bcd.jpg",
-    "static/media/snacks.jpg": "/fitness/static/media/snacks.c7e56853cc572eda0b78.jpg",
     "static/media/recover.png": "/fitness/static/media/recover.a4b2d44140d40d7133e4.png",
     "static/media/fruit-snack.jpg": "/fitness/static/media/fruit-snack.8b0eeb28e3d99e601095.jpg",
     "static/media/hydrate.png": "/fitness/static/media/hydrate.a30e759908c3a74379bf.png",
@@ -30,11 +27,11 @@
     "static/media/mobility.jpg": "/fitness/static/media/mobility.58a31a3d7ff6fd940479.jpg",
     "static/media/training-plan.jpg": "/fitness/static/media/training-plan.e6a73be0a31584685a9e.jpg",
     "index.html": "/fitness/index.html",
-    "main.98d43653.css.map": "/fitness/static/css/main.98d43653.css.map",
-    "main.18e3fac9.js.map": "/fitness/static/js/main.18e3fac9.js.map"
+    "main.a98f70d9.css.map": "/fitness/static/css/main.a98f70d9.css.map",
+    "main.8b49d46e.js.map": "/fitness/static/js/main.8b49d46e.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d43653.css",
-    "static/js/main.18e3fac9.js"
+    "static/css/main.a98f70d9.css",
+    "static/js/main.8b49d46e.js"
   ]
 }
