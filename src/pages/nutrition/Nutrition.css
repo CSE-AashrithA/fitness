@@ -43,7 +43,19 @@
 }
 
 .guide-card-columns {
+    flex-wrap: wrap;
+}
+
+.guide-card-columns .info-card {
+    flex: 1 1 250px;
+}
+
+.guide-card-columns {
     margin-top: 42px;
+}
+.guide-message {
+    color: var(--gray-text);
+    margin-top: 30px;
 }
 
 .featured-section {
