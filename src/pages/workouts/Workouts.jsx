@@ -32,9 +32,14 @@ const Workouts = () => {
             alt: "College athlete stretching after a workout",
             title: "Mobility Reset",
             text: "Mobility work can help you feel less stiff after training.",
-            example: "Try arm circles, hip stretches, and a slow hamstring stretch."
+            example: "Arm circles, hip stretches, and a slow hamstring stretch."
         }
     ];
+
+    const scrollToWorkouts = () => {
+        document.getElementById("workout-types").scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <main className="workouts-page">
             <Hero
@@ -44,12 +49,12 @@ const Workouts = () => {
                 imageAlt="College athlete lifting weights in a gym"
                 lightText={true}
             >
-                <Link className="workouts-button" to="/workouts">
+                <button className="workouts-button" type="button" onClick={scrollToWorkouts}>
                     Explore Workouts
-                </Link>
+                </button>
             </Hero>
 
-            <section className="workout-section">
+            <section className="workout-section" id="workout-types">
                 <div className="section-title">
                     <span></span>
                     <h2>Train for your goals.</h2>

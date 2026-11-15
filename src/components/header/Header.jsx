@@ -15,7 +15,7 @@ const Header = () => {
                 <Navigation />
 
                 <NavLink className="contact-button" to="/contact">
-                    Contact us
+                    Contact Us
                 </NavLink>
             </div>
         </header>

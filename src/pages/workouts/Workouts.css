@@ -1,8 +1,12 @@
 .workouts-button {
     background-color: var(--gold);
+    border: none;
     border-radius: 5px;
     color: var(--navy);
+    cursor: pointer;
     display: inline-block;
+    font-family: inherit;
+    font-size: 1em;
     font-weight: bold;
     margin-top: 28px;
     padding: 14px 20px;
