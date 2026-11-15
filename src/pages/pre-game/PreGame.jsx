@@ -12,11 +12,10 @@ const PreGame = () => {
         <main className="pre-game-page">
             <Hero
                 label="NUTRITION GUIDE"
-                title="Pre-Game Fuel"
+                title={<>Pre-Game <span>Fuel</span></>}
                 text="Eat the right foods before practice or competition so you can feel energized and ready to perform."
                 image={preGameHero}
                 imageAlt="College athlete packing healthy food before practice"
-                lightText={true}
             />
 
             <section className="intro-section">

@@ -1,11 +1,3 @@
-.hero-label {
-    color: var(--gold);
-    font-size: 0.8em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 14px;
-}
-
 .intro-section {
     margin: auto;
     max-width: 1200px;

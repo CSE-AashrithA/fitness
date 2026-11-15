@@ -18,14 +18,21 @@ const Home = () => {
     return (
         <main className="home-page">
             <Hero
-                title={<>Train hard.<br />Fuel smarter.</>}
+                label="BUILT FOR COLLEGE ATHLETES"
+                title={<>Train hard.<br /><span>Fuel smarter.</span></>}
                 text="Personalized nutrition, recovery, and training guidance designed for college student-athletes."
                 image={heroImage}
                 imageAlt="College athlete eating a healthy meal in a gym"
             >
-                <Link className="home-button" to="/nutrition">
-                    Explore Nutrition
-                </Link>
+                <div className="hero-buttons">
+                    <Link className="home-button" to="/nutrition">
+                        Explore Nutrition
+                    </Link>
+
+                    <Link className="hero-outline-button" to="/workouts">
+                        Browse Workouts
+                    </Link>
+                </div>
             </Hero>
 
             <section className="performance-section">

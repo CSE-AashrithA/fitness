@@ -59,11 +59,10 @@ setResult("Sending message...");
             <Toaster position="top-center" />
             <Hero
                 label="CONTACT FITGUIDE"
-                title={<>Let’s build your<br />better routine.</>}
+                title={<>Let’s build your<br /><span>better routine.</span></>}
                 text="Have a question about nutrition, training, or recovery? Send us a message and we will be glad to help."
                 image={contactHero}
                 imageAlt="College athlete planning fitness goals at a table"
-                lightText={true}
             />
 
             <section className="contact-section">

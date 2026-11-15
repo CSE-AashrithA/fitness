@@ -35,7 +35,8 @@ const Nutrition = () => {
     return (
         <main className="nutrition-page">
             <Hero
-                title={<>Fuel every rep,<br />run, and game.</>}
+                label="NUTRITION"
+                title={<>Fuel every rep,<br /><span>run, and game.</span></>}
                 text="Performance-driven nutrition guidance for college athletes with busy schedules, training, and classes."
                 image={nutritionHero}
                 imageAlt="College athlete preparing a healthy meal before training"

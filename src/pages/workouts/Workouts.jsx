@@ -43,11 +43,11 @@ const Workouts = () => {
     return (
         <main className="workouts-page">
             <Hero
-                title={<>Train with a plan.<br />Perform with confidence.</>}
+                label="TRAINING"
+                title={<>Train with a plan.<br /><span>Perform with confidence.</span></>}
                 text="Simple workout guidance to help college athletes build strength, improve endurance, and recover well."
                 image={workoutsHero}
                 imageAlt="College athlete lifting weights in a gym"
-                lightText={true}
             >
                 <button className="workouts-button" type="button" onClick={scrollToWorkouts}>
                     Explore Workouts

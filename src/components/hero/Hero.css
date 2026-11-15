@@ -1,16 +1,41 @@
 .hero {
+    overflow: hidden;
     position: relative;
 }
 
 .hero img {
+    animation: hero-zoom 14s ease-out forwards;
     display: block;
-    height: 620px;
+    height: 640px;
     object-fit: cover;
     object-position: right top;
     width: 100%;
 }
 
+@keyframes hero-zoom {
+    from {
+        transform: scale(1.08);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* navy fade on the left so the text is easy to read */
+.hero-overlay {
+    background: linear-gradient(to right, rgba(20, 48, 77, 0.95) 35%, transparent 70%);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .hero-content {
+    align-items: center;
+    display: flex;
+    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
@@ -20,39 +45,83 @@
 .hero-text {
     margin: auto;
     max-width: 1200px;
-    padding: 80px 55px;
+    padding: 0 55px;
+    width: 100%;
+}
+
+.hero .hero-label {
+    border: 1px solid var(--gold);
+    border-radius: 30px;
+    color: var(--gold);
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 22px;
+    padding: 7px 14px;
 }
 
 .hero h1 {
-    color: var(--navy);
-    font-size: 3.2em;
+    color: var(--white);
+    font-size: 3.8em;
     line-height: 1.1;
     margin: 0 0 20px;
-    max-width: 550px;
+    max-width: 620px;
+}
+
+.hero h1 span {
+    color: var(--gold);
 }
 
 .hero p {
-    font-size: 1.15em;
+    color: #dbe4ee;
+    font-size: 1.2em;
     line-height: 1.5;
     margin: 0;
     max-width: 500px;
 }
-.light-text h1,
-.light-text p {
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.hero-outline-button {
+    border: 2px solid var(--white);
+    border-radius: 5px;
     color: var(--white);
+    display: inline-block;
+    font-weight: bold;
+    padding: 12px 20px;
+}
+
+.hero-outline-button:hover {
+    background-color: var(--white);
+    color: var(--navy);
 }
 
 @media (max-width: 700px) {
     .hero img {
-        height: 500px;
+        height: 560px;
+    }
+
+    .hero-overlay {
+        background: rgba(20, 48, 77, 0.78);
     }
 
     .hero-text {
-        padding: 55px 25px;
+        padding: 0 25px;
+    }
+
+    .hero .hero-label {
+        font-size: 0.7em;
+        letter-spacing: 1.5px;
     }
 
     .hero h1 {
-        font-size: 2.5em;
+        font-size: 2.6em;
     }
 
     .hero p {
