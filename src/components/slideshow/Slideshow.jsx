@@ -36,9 +36,8 @@ const Slideshow = ({ slides }) => {
                     <h2>{slides[currentSlide].title}</h2>
                     <p>{slides[currentSlide].text}</p>
                     <p className="slide-example">
-    <strong>Try this:</strong> {slides[currentSlide].example}
-    </p>
-                    
+                        <strong>Try this:</strong> {slides[currentSlide].example}
+                    </p>
                 </div>
 
                 <button className="previous-button" onClick={previousSlide}>
@@ -52,4 +51,5 @@ const Slideshow = ({ slides }) => {
         </section>
     );
 };
+
 export default Slideshow;

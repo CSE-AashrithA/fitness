@@ -6,12 +6,12 @@ import Hero from "../../components/hero/Hero";
 import contactHero from "../../images/contact/contact-hero.jpg";
 import contactSupport from "../../images/contact/contact-support.jpg";
 
-    const topicOptions = [
-        { value: "Nutrition", label: "Nutrition" },
-        { value: "Workouts", label: "Workouts" },
-        { value: "Recovery", label: "Recovery" },
-        { value: "General Question", label: "General Question" }
-    ];
+const topicOptions = [
+    { value: "Nutrition", label: "Nutrition" },
+    { value: "Workouts", label: "Workouts" },
+    { value: "Recovery", label: "Recovery" },
+    { value: "General Question", label: "General Question" }
+];
 
 const Contact = () => {
     const [result, setResult] = useState("");
@@ -26,7 +26,7 @@ const Contact = () => {
             return;
         }
 
-setResult("Sending message...");
+        setResult("Sending message...");
 
         const formData = new FormData(event.target);
         formData.set("topic", selectedTopic.value);
@@ -110,14 +110,14 @@ setResult("Sending message...");
 
                     <label htmlFor="topic">What do you need help with?</label>
                     <Select
-                    className="topic-select"
-                    inputId="topic"
-                    name="topic"
-                    options={topicOptions}
-                    value={selectedTopic}
-                    onChange={setSelectedTopic}
-                    placeholder="Choose a topic"
-/>
+                        className="topic-select"
+                        inputId="topic"
+                        name="topic"
+                        options={topicOptions}
+                        value={selectedTopic}
+                        onChange={setSelectedTopic}
+                        placeholder="Choose a topic"
+                    />
 
                     <label htmlFor="message">Message</label>
                     <textarea

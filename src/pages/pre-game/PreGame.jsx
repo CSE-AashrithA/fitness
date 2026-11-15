@@ -46,52 +46,54 @@ const PreGame = () => {
                     />
                 </div>
             </section>
+
             <section className="meal-section">
-    <div className="meal-content">
-        <div className="section-title">
-            <span></span>
-            <h2>Simple pre-game meal ideas.</h2>
-        </div>
+                <div className="meal-content">
+                    <div className="section-title">
+                        <span></span>
+                        <h2>Simple pre-game meal ideas.</h2>
+                    </div>
 
-        <h3>Breakfast before a morning game</h3>
-        <p>Oatmeal with fruit, Greek yogurt, and water.</p>
+                    <h3>Breakfast before a morning game</h3>
+                    <p>Oatmeal with fruit, Greek yogurt, and water.</p>
 
-        <h3>Lunch before afternoon practice</h3>
-        <p>Grilled chicken, rice, vegetables, and fruit.</p>
+                    <h3>Lunch before afternoon practice</h3>
+                    <p>Grilled chicken, rice, vegetables, and fruit.</p>
 
-        <h3>Quick snack before training</h3>
-        <p>A banana with peanut butter or a granola bar.</p>
-    </div>
+                    <h3>Quick snack before training</h3>
+                    <p>A banana with peanut butter or a granola bar.</p>
+                </div>
 
-    <img
-        src={preGameMeal}
-        alt="Healthy pre-game meal with fruit, oatmeal, and yogurt"
-    />
-</section>
-<section className="snack-section">
-    <div className="snack-content">
-        <div className="section-title">
-            <span></span>
-            <h2>Grab-and-go snack ideas.</h2>
-        </div>
+                <img
+                    src={preGameMeal}
+                    alt="Healthy pre-game meal with fruit, oatmeal, and yogurt"
+                />
+            </section>
 
-        <div className="snack-card-columns">
-            <InfoCard
-                image={fruitSnackImage}
-                imageAlt="Banana and fruit snack for before practice"
-                title="Fast Energy"
-                text="Fruit, applesauce, crackers, and pretzels are easy choices when you need energy quickly."
-            />
+            <section className="snack-section">
+                <div className="snack-content">
+                    <div className="section-title">
+                        <span></span>
+                        <h2>Grab-and-go snack ideas.</h2>
+                    </div>
 
-            <InfoCard
-                image={gymBagSnackImage}
-                imageAlt="Healthy snacks packed in a gym bag"
-                title="Plan Ahead"
-                text="Pack your snack and water bottle before class so you are prepared when it is time to train."
-            />
-        </div>
-    </div>
-</section>
+                    <div className="snack-card-columns">
+                        <InfoCard
+                            image={fruitSnackImage}
+                            imageAlt="Banana and fruit snack for before practice"
+                            title="Fast Energy"
+                            text="Fruit, applesauce, crackers, and pretzels are easy choices when you need energy quickly."
+                        />
+
+                        <InfoCard
+                            image={gymBagSnackImage}
+                            imageAlt="Healthy snacks packed in a gym bag"
+                            title="Plan Ahead"
+                            text="Pack your snack and water bottle before class so you are prepared when it is time to train."
+                        />
+                    </div>
+                </div>
+            </section>
         </main>
     );
 };

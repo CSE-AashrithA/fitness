@@ -10,7 +10,6 @@ import trainingPlanImage from "../../images/workouts/training-plan.jpg";
 import BasicCard from "../../components/basic-card/BasicCard";
 import Slideshow from "../../components/slideshow/Slideshow";
 
-
 const Workouts = () => {
     const slides = [
         {
@@ -88,64 +87,67 @@ const Workouts = () => {
                     />
                 </div>
             </section>
+
             <section className="routine-section">
-    <div className="routine-content">
-        <div className="section-title">
-            <span></span>
-            <h2>Build a better routine.</h2>
-        </div>
+                <div className="routine-content">
+                    <div className="section-title">
+                        <span></span>
+                        <h2>Build a better routine.</h2>
+                    </div>
 
-        <h3>Choose your focus</h3>
-        <p>
-            Pick a goal such as strength, endurance, speed, or overall fitness.
-        </p>
+                    <h3>Choose your focus</h3>
+                    <p>
+                        Pick a goal such as strength, endurance, speed, or overall fitness.
+                    </p>
 
-        <h3>Train consistently</h3>
-        <p>
-            Use a schedule that works around classes, practices, and rest days.
-        </p>
+                    <h3>Train consistently</h3>
+                    <p>
+                        Use a schedule that works around classes, practices, and rest days.
+                    </p>
 
-        <h3>Recover between sessions</h3>
-        <p>
-            Prioritize sleep, hydration, and mobility so your body is ready to train again.
-        </p>
+                    <h3>Recover between sessions</h3>
+                    <p>
+                        Prioritize sleep, hydration, and mobility so your body is ready to train again.
+                    </p>
 
-        <Link className="routine-button" to="/contact">
-            Build My Routine
-        </Link>
-    </div>
+                    <Link className="routine-button" to="/contact">
+                        Build My Routine
+                    </Link>
+                </div>
 
-    <img
-        src={trainingPlanImage}
-        alt="College athlete planning workouts in a notebook"
-    />
-</section>
-<section className="tips-section">
-    <div className="tips-content">
-        <div className="section-title">
-            <span></span>
-            <h2>Workout tips that matter.</h2>
-        </div>
+                <img
+                    src={trainingPlanImage}
+                    alt="College athlete planning workouts in a notebook"
+                />
+            </section>
 
-        <div className="tips-card-columns">
-            <BasicCard
-                title="Start with the basics"
-                text="Focus on good form before adding more weight or more difficult exercises."
-            />
+            <section className="tips-section">
+                <div className="tips-content">
+                    <div className="section-title">
+                        <span></span>
+                        <h2>Workout tips that matter.</h2>
+                    </div>
 
-            <BasicCard
-                title="Make time to rest"
-                text="Rest days give your muscles time to recover and grow stronger."
-            />
+                    <div className="tips-card-columns">
+                        <BasicCard
+                            title="Start with the basics"
+                            text="Focus on good form before adding more weight or more difficult exercises."
+                        />
 
-            <BasicCard
-                title="Stay consistent"
-                text="A simple plan you can follow each week is better than an unrealistic routine."
-            />
-        </div>
-    </div>
-</section>
-<section className="training-location-section">
+                        <BasicCard
+                            title="Make time to rest"
+                            text="Rest days give your muscles time to recover and grow stronger."
+                        />
+
+                        <BasicCard
+                            title="Stay consistent"
+                            text="A simple plan you can follow each week is better than an unrealistic routine."
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className="training-location-section">
                 <div className="training-location-content">
                     <div className="section-title">
                         <span></span>
@@ -164,9 +166,9 @@ const Workouts = () => {
                     loading="lazy"
                 ></iframe>
             </section>
-<Slideshow slides={slides} />
+
+            <Slideshow slides={slides} />
         </main>
-        
     );
 };
 

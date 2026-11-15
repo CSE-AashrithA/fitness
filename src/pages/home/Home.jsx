@@ -66,90 +66,92 @@ const Home = () => {
             </section>
 
             <section className="plan-section">
-    <div className="plan-content">
-        <div className="section-title">
-            <span></span>
-            <h2>Your game plan, simplified.</h2>
-        </div>
+                <div className="plan-content">
+                    <div className="section-title">
+                        <span></span>
+                        <h2>Your game plan, simplified.</h2>
+                    </div>
 
-        <h3>Tell us your sport</h3>
-        <p>
-            Choose your sport, position, goals, and training schedule.
-        </p>
+                    <h3>Tell us your sport</h3>
+                    <p>
+                        Choose your sport, position, goals, and training schedule.
+                    </p>
 
-        <h3>See your starting plan</h3>
-        <p>
-            Get clear daily targets for calories, protein, hydration, and recovery.
-        </p>
+                    <h3>See your starting plan</h3>
+                    <p>
+                        Get clear daily targets for calories, protein, hydration, and recovery.
+                    </p>
 
-        <h3>Build better habits</h3>
-        <p>
-            Use practical meal, hydration, and recovery ideas that fit your routine.
-        </p>
+                    <h3>Build better habits</h3>
+                    <p>
+                        Use practical meal, hydration, and recovery ideas that fit your routine.
+                    </p>
 
-        <Link className="plan-button" to="/workouts">
-            Explore Workouts
-        </Link>
-    </div>
+                    <Link className="plan-button" to="/workouts">
+                        Explore Workouts
+                    </Link>
+                </div>
 
-    <img
-        src={planImage}
-        alt="College athlete looking at a fitness plan on a tablet"
-    />
-</section>
-<section className="home-nutrition-section">
-    <div className="section-title">
-        <span></span>
-        <h2>Nutrition built for your sport.</h2>
-    </div>
+                <img
+                    src={planImage}
+                    alt="College athlete looking at a fitness plan on a tablet"
+                />
+            </section>
 
-    <div className="two-card-columns">
-        <InfoCard
-            image={preGameImage}
-            imageAlt="Healthy breakfast bowl for pre-game fuel"
-            title="Pre-Game Fuel"
-            text="What to eat before practice or competition for steady energy."
-        />
+            <section className="home-nutrition-section">
+                <div className="section-title">
+                    <span></span>
+                    <h2>Nutrition built for your sport.</h2>
+                </div>
 
-        <InfoCard
-            image={recoveryImage}
-            imageAlt="Berry smoothie and recovery snacks"
-            title="Recovery Nutrition"
-            text="Simple food choices that help your body rebuild after training."
-        />
-    </div>
-</section>
-<section className="testimonial-section">
-    <div className="testimonial-content">
-        <div className="section-title">
-            <span></span>
-            <h2>Built for real student-athlete routines.</h2>
-        </div>
+                <div className="two-card-columns">
+                    <InfoCard
+                        image={preGameImage}
+                        imageAlt="Healthy breakfast bowl for pre-game fuel"
+                        title="Pre-Game Fuel"
+                        text="What to eat before practice or competition for steady energy."
+                    />
 
-        <div className="card-columns">
-            <Testimonial
-                quote="FitGuide made my nutrition goals easy to understand."
-                image={mayaImage}
-                name="Maya W."
-                sport="Club Soccer Athlete"
-            />
+                    <InfoCard
+                        image={recoveryImage}
+                        imageAlt="Berry smoothie and recovery snacks"
+                        title="Recovery Nutrition"
+                        text="Simple food choices that help your body rebuild after training."
+                    />
+                </div>
+            </section>
 
-            <Testimonial
-                quote="I feel more prepared for every practice."
-                image={jordanImage}
-                name="Jordan T."
-                sport="Track and Field Athlete"
-            />
+            <section className="testimonial-section">
+                <div className="testimonial-content">
+                    <div className="section-title">
+                        <span></span>
+                        <h2>Built for real student-athlete routines.</h2>
+                    </div>
 
-            <Testimonial
-                quote="Small changes helped my recovery so much."
-                image={alexImage}
-                name="Alex R."
-                sport="Basketball Athlete"
-            />
-        </div>
-    </div>
-</section>
+                    <div className="card-columns">
+                        <Testimonial
+                            quote="FitGuide made my nutrition goals easy to understand."
+                            image={mayaImage}
+                            name="Maya W."
+                            sport="Club Soccer Athlete"
+                        />
+
+                        <Testimonial
+                            quote="I feel more prepared for every practice."
+                            image={jordanImage}
+                            name="Jordan T."
+                            sport="Track and Field Athlete"
+                        />
+
+                        <Testimonial
+                            quote="Small changes helped my recovery so much."
+                            image={alexImage}
+                            name="Alex R."
+                            sport="Basketball Athlete"
+                        />
+                    </div>
+                </div>
+            </section>
         </main>
     );
 };
