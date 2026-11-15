@@ -30,3 +30,25 @@
         height: 250px;
     }
 }
+.info-card-clickable {
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.info-card-clickable:hover {
+    box-shadow: 0 12px 24px rgba(8, 28, 52, 0.14);
+    transform: translateY(-5px);
+}
+
+.info-card-clickable:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+.info-card-action {
+    color: var(--navy);
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 18px;
+}

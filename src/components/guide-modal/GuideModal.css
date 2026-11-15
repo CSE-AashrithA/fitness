@@ -1,0 +1,109 @@
+.guide-modal-overlay {
+    align-items: center;
+    background-color: rgba(8, 28, 52, 0.72);
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    padding: 25px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.guide-modal {
+    background-color: var(--white);
+    border-radius: 10px;
+    max-height: 90vh;
+    max-width: 760px;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+}
+
+.guide-modal img {
+    display: block;
+    height: 290px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.guide-modal-content {
+    padding: 32px;
+}
+
+.guide-modal-category {
+    color: var(--gold);
+    font-size: 0.85em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.guide-modal h2 {
+    color: var(--navy);
+    margin: 0 0 16px;
+}
+
+.guide-modal-content > p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+.guide-modal-time {
+    border-left: 4px solid var(--gold);
+    margin-top: 24px;
+    padding-left: 15px;
+}
+
+.guide-modal-time span,
+.guide-modal-time strong {
+    display: block;
+}
+
+.guide-modal-time span {
+    color: #666666;
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.guide-modal-time strong {
+    color: var(--navy);
+    margin-top: 5px;
+}
+
+.guide-modal-close {
+    align-items: center;
+    background-color: var(--white);
+    border: 0;
+    border-radius: 50%;
+    color: var(--navy);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.8em;
+    height: 42px;
+    justify-content: center;
+    line-height: 1;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 42px;
+}
+
+.guide-modal-close:hover {
+    background-color: var(--gold);
+}
+
+@media (max-width: 700px) {
+    .guide-modal-overlay {
+        padding: 15px;
+    }
+
+    .guide-modal img {
+        height: 220px;
+    }
+
+    .guide-modal-content {
+        padding: 25px;
+    }
+}

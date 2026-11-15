@@ -1,0 +1,76 @@
+.guide-form {
+    background-color: var(--white);
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(8, 28, 52, 0.08);
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.guide-form label {
+    color: var(--navy);
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+.guide-form input,
+.guide-form select,
+.guide-form textarea {
+    background-color: var(--white);
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font: inherit;
+    margin: 0 0 20px;
+    padding: 12px;
+    width: 100%;
+}
+
+.guide-form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.guide-form input[type="file"] {
+    background-color: #f7f5f1;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.guide-form button {
+    align-self: flex-start;
+    background-color: var(--navy);
+    border: 0;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    padding: 14px 20px;
+}
+
+.guide-form button:hover:not(:disabled) {
+    background-color: #173f69;
+}
+
+.guide-form button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.guide-form-message {
+    color: var(--navy);
+    font-weight: bold;
+    margin: 18px 0 0;
+}
+
+@media (max-width: 700px) {
+    .guide-form {
+        padding: 25px;
+    }
+
+    .guide-form button {
+        width: 100%;
+    }
+}

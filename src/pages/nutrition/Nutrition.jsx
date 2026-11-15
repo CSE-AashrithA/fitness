@@ -6,13 +6,18 @@ import nutritionHero from "../../images/nutrition/nutrition-hero.jpg";
 import BasicCard from "../../components/basic-card/BasicCard";
 import preGameFuelImage from "../../images/nutrition/pre-game-fuel.jpg";
 import InfoCard from "../../components/card/InfoCard";
+import GuideModal from "../../components/guide-modal/GuideModal";
+import GuideForm from "../../components/guide-form/GuideForm";
+
+const serverUrl = "https://fitguide-server-1.onrender.com";
 
 const Nutrition = () => {
     const [guides, setGuides] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [selectedGuide, setSelectedGuide] = useState(null);
 
     useEffect(() => {
-        fetch("https://fitguide-server-1.onrender.com/api/fitness")
+        fetch(`${serverUrl}/api/fitness`)
             .then((response) => response.json())
             .then((data) => {
                 setGuides(data);
@@ -22,6 +27,10 @@ const Nutrition = () => {
                 setLoading(false);
             });
     }, []);
+
+    const addGuideToList = (newGuide) => {
+        setGuides((currentGuides) => [newGuide, ...currentGuides]);
+    };
 
     return (
         <main className="nutrition-page">
@@ -112,15 +121,50 @@ const Nutrition = () => {
                         {guides.map((guide) => (
                             <InfoCard
                                 key={guide._id}
-                                image={`https://fitguide-server-1.onrender.com/${guide.main_image}`}
+                                image={`${serverUrl}/${guide.main_image}`}
                                 imageAlt={guide.title}
                                 title={guide.title}
                                 text={guide.description}
+                                onClick={() => setSelectedGuide(guide)}
                             />
                         ))}
                     </div>
                 )}
             </section>
+
+            <section className="add-guide-section">
+                <div className="add-guide-layout">
+                    <div className="add-guide-content">
+                        <div className="section-title">
+                            <span></span>
+                            <h2>Share a helpful guide.</h2>
+                        </div>
+
+                        <p>
+                            Have a simple nutrition, hydration, meal, or recovery
+                            tip? Add it to the FitGuide collection for other
+                            college athletes.
+                        </p>
+
+                        <p className="add-guide-note">
+                            Your guide appears in the collection immediately
+                            after it is successfully added.
+                        </p>
+                    </div>
+
+                    <GuideForm onGuideAdded={addGuideToList} />
+                </div>
+            </section>
+
+            <GuideModal
+                guide={selectedGuide}
+                imageUrl={
+                    selectedGuide
+                        ? `${serverUrl}/${selectedGuide.main_image}`
+                        : ""
+                }
+                onClose={() => setSelectedGuide(null)}
+            />
         </main>
     );
 };
